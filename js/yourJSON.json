@@ -1,0 +1,180 @@
+[{
+        "name": "Alex",
+        "job": "COO",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Gerard",
+        "job": "Events",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Ruben",
+        "job": "Data Mentor",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Mark",
+        "job": "Director",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Sebastian",
+        "job": "CEO",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Nadia",
+        "job": "Sells",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Vio",
+        "job": "Job Placement",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Ignasi",
+        "job": "Java Mentor",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Victor",
+        "job": "Sells",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Dani",
+        "job": "Data Mentor",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Lluis",
+        "job": "Data Mentor",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    },
+    {
+        "name": "Raul",
+        "job": "Java Mentor",
+        "images": {
+            "front": "front.png",
+            "upleft": "upleft.png",
+            "up": "up.png",
+            "upright": "upright.png",
+            "right": "right.png",
+            "downright": "downright.png",
+            "down": "down.png",
+            "downleft": "downleft.png",
+            "left": "left.png"
+        }
+    }]
