@@ -127,21 +127,15 @@ function activeHeadsMoving() {
 
     }
 
-    // $(".image-holder").on('mouseover', function (event) {
-    //     $(".member-" + event.currentTarget.classList[1]).slideDown();
-    // });
-    // $(".image-holder").on('mouseleave', function (event) {
-    //     $(".member-" + event.currentTarget.classList[1]).slideUp();
-
-    // });
-
-
     $(".role").on('click', function (event) {
         $(event.currentTarget.parentElement.parentElement.children[1]).slideToggle();
+        var text = $(this).text();
+        $(this).text(text == "+" ? "x" : "+");
     });
 
     $(".image-holder").on('mouseleave', function (event) {
         $(event.currentTarget.children[1]).slideUp();
+        $(event.currentTarget.children[0].children[1]).text("+");
     });
 
     
