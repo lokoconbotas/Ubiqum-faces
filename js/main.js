@@ -31,8 +31,12 @@ var imageTwelve;
 function createFace(element) {
     var imageHolder = $("<div/>").addClass("image-holder " + element.name);
     var info = $("<div/>").addClass("info member-" + element.name);
+    var info2 = $("<div/>").addClass("info2");
+    
     var name = $("<p/>").addClass("name").html(element.name);
-    var role = $("<p/>").addClass("role").html(element.job);
+    var role = $("<p/>").addClass("role").html("+");
+    var desc = $("<p/>").addClass("desc").html(element.info);
+    
     var imgC = $("<img>").addClass("circle").attr("src", "img/circle.png");
     var imgU = $("<img>").addClass("head-image up").attr("src", "img/" + element.name + "/" + element.images.up);
     var imgUL = $("<img>").addClass("head-image up-left").attr("src", "img/" + element.name + "/" + element.images.upleft);
@@ -45,7 +49,8 @@ function createFace(element) {
     var imgF = $("<img>").addClass("head-image front").attr("src", "img/" + element.name + "/" + element.images.front);
 
     info.append(name, role);
-    imageHolder.append(info, imgC, imgU, imgUL, imgL, imgDL, imgD, imgDR, imgR, imgDR, imgR, imgUR, imgF);
+    info2.append(desc);
+    imageHolder.append(info, info2, imgC, imgU, imgUL, imgL, imgDL, imgD, imgDR, imgR, imgDR, imgR, imgUR, imgF);
 
     $(".content-wrapper").append(imageHolder);
 }
@@ -56,7 +61,9 @@ function createFace(element) {
 function activeHeadsMoving() {
 
 
-    $('.info').hide();
+    // $('.info').hide();
+    $('.info2').hide();
+    
 
     /* Calling the initialization function */
     $(init);
@@ -120,11 +127,22 @@ function activeHeadsMoving() {
 
     }
 
-    $(".image-holder").on('mouseover', function (event) {
-        $(".member-" + event.currentTarget.classList[1]).slideDown();
-    });
-    $(".image-holder").on('mouseleave', function () {
-        $(".member-" + event.currentTarget.classList[1]).slideUp();
+    // $(".image-holder").on('mouseover', function (event) {
+    //     $(".member-" + event.currentTarget.classList[1]).slideDown();
+    // });
+    // $(".image-holder").on('mouseleave', function (event) {
+    //     $(".member-" + event.currentTarget.classList[1]).slideUp();
 
+    // });
+
+
+    $(".role").on('click', function (event) {
+        $(event.currentTarget.parentElement.parentElement.children[1]).slideToggle();
     });
+
+    $(".image-holder").on('mouseleave', function (event) {
+        $(event.currentTarget.children[1]).slideUp();
+    });
+
+    
 }
