@@ -9,7 +9,7 @@ $.getJSON("js/yourJSON.json", function (data) {
 });
 
 
-/* Declaring the global variables */
+// Global variables
 var mouseX;
 var mouseY;
 var imageOne;
@@ -24,8 +24,6 @@ var imageNine;
 var imageTen;
 var imageEleven;
 var imageTwelve;
-
-
 
 
 function createFace(element) {
@@ -60,16 +58,13 @@ function createFace(element) {
 
 function activeHeadsMoving() {
 
-
-    // $('.info').hide();
     $('.info2').hide();
 
-
-    /* Calling the initialization function */
+    // The start function
     $(init);
 
-    /* The images need to re-initialize on load and on resize, or else the areas
-    where each image is displayed will be wrong. */
+    // The images need to re-initialize on load and on resize, or else the areas
+    // where each image is displayed will be wrong.
     $(window).load(init);
     $(window).resize(init);
 
@@ -130,25 +125,7 @@ function activeHeadsMoving() {
         $(".role").not(this).removeClass("antirole");
 
         $(this.parentElement.parentElement.children[1]).slideToggle("fast");
-        $(".info2").not(this.parentElement.parentElement.children[1]).slideUp();
-
-        // var text = $(this).text();
-        // $(this).text(text == "+" ? "x" : "+");
-
-        // var othersText = $(".role").not(this).text();
-        // $(".role").not(this).text(othersText == "+" ? "x" : "+");        
-
+        $(".info2").not(this.parentElement.parentElement.children[1]).slideUp("fast");      
     });
-
-
-    // $('.info2').click(function () {
-    //     $('.info2').toggleClass('doorOpen');
-    // });
-
-    // $(".image-holder").on('mouseleave', function (event) {
-    //     $(event.currentTarget.children[1]).slideUp();
-    //     $(event.currentTarget.children[0].children[1]).text("+");
-    // });
-
 
 }

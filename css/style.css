@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h3,p{
@@ -12,8 +13,6 @@ h3{
     font-weight: 300;
 }
 
-
-
 .certificates{
     font-size: 14px;
 }
@@ -22,8 +21,11 @@ h3{
     width: 80%;
     height: 90vh;
     margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .text-holder{
@@ -35,7 +37,8 @@ h3{
     margin: 0 auto 20px auto;
     width: 260px;
     height: 260px;
-    box-shadow: 5px 7px 11px 0px grey;    
+    -webkit-box-shadow: 5px 7px 11px 0px grey;
+            box-shadow: 5px 7px 11px 0px grey;    
 }
 
 .head-image,.circle{
@@ -68,100 +71,134 @@ h3{
 .info{
     position: absolute;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: 15%;
     background: white;
     color: black;
     z-index: 2;
+    font-size: 16px;    
 }
 .info2{
     position: absolute;
     top: 0;
     opacity: .8;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: 85%;
     background: white;
     color: black;
     z-index: 2;
-    /* transform-origin: left;
-    transition: all 0.5s ease-in-out; */
-}
-
-.info{
-    font-size: 16px;
 }
 
 .name{
     padding-left: 25px;
 }
+
 .role{
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 35px;
     height: 30px;
     color: #ff6e41;
     font-size: 30px;  
-    animation: spin .25s normal forwards ease-in-out, blink 1s linear infinite; 
+    -webkit-animation: spin .25s normal forwards ease-in-out, blink 1s linear infinite;  
+            animation: spin .25s normal forwards ease-in-out, blink 1s linear infinite; 
 }
 
-/* TODO: Finish the animation to stay fixed at the end of cross spin */
 .antirole{
     background: transparent; 
     color: #ff6e41;
-    animation: antispin .25s normal forwards ease-in-out;
+    -webkit-animation: antispin .25s normal forwards ease-in-out;
+            animation: antispin .25s normal forwards ease-in-out;
 
 }
 
-.door
-{
-  background-color: brown;
-  position:absolute;
-  top:0px;
-  left:0px;
-  width:200px;
-  height:300px;
- 
-  transform-origin: left;
-  /*Speed of the Door animation*/
-  transition: all 0.5s ease-in-out;
-}
-
-.doorOpen
-{
-  /*prespectiv creates the door open effect*/
-  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
-}
-
-@keyframes spin {
+/* Animations */
+@-webkit-keyframes spin {
     from {
-        transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+                transform: rotate(315deg);
         color: red;
         font-weight: bold;
         font-size: 40px;
     }
     to {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
         
+    }
+}
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(315deg);
+                transform: rotate(315deg);
+        color: red;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        
+    }
+}
+
+@-webkit-keyframes antispin {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(315deg);
+                transform: rotate(315deg);
+        color: red;
+        font-weight: bold;
+        font-size: 40px;
     }
 }
 
 @keyframes antispin {
     from {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     to {
-        transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+                transform: rotate(315deg);
         color: red;
         font-weight: bold;
         font-size: 40px;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0.4;
     }
 }
 
@@ -176,12 +213,15 @@ h3{
     width: 100%;
     font-size: 20px;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.moreInfo{
-    z-index: 5;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .desc{
