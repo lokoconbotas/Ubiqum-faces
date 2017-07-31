@@ -32,12 +32,12 @@ function createFace(element) {
     var imageHolder = $("<div/>").addClass("image-holder " + element.name);
     var info = $("<div/>").addClass("info member-" + element.name);
     var info2 = $("<div/>").addClass("info2");
-    
-    var name = $("<p/>").addClass("name").html(element.name);
+
+    var name = $("<p/>").addClass("name").html(element.longName);
     var role = $("<p/>").addClass("role").html("+");
     var desc = $("<p/>").addClass("desc").html(element.info);
-    
-    var imgC = $("<img>").addClass("circle").attr("src", "img/circle.png");
+
+    // var imgC = $("<img>").addClass("circle").attr("src", "img/circle.png");
     var imgU = $("<img>").addClass("head-image up").attr("src", "img/" + element.name + "/" + element.images.up);
     var imgUL = $("<img>").addClass("head-image up-left").attr("src", "img/" + element.name + "/" + element.images.upleft);
     var imgL = $("<img>").addClass("head-image left").attr("src", "img/" + element.name + "/" + element.images.left);
@@ -50,7 +50,7 @@ function createFace(element) {
 
     info.append(name, role);
     info2.append(desc);
-    imageHolder.append(info, info2, imgC, imgU, imgUL, imgL, imgDL, imgD, imgDR, imgR, imgDR, imgR, imgUR, imgF);
+    imageHolder.append(info, info2, /*imgC,*/ imgU, imgUL, imgL, imgDL, imgD, imgDR, imgR, imgDR, imgR, imgUR, imgF);
 
     $(".content-wrapper").append(imageHolder);
 }
@@ -63,7 +63,7 @@ function activeHeadsMoving() {
 
     // $('.info').hide();
     $('.info2').hide();
-    
+
 
     /* Calling the initialization function */
     $(init);
@@ -104,8 +104,6 @@ function activeHeadsMoving() {
     It also calls the UbiqumHead function to display the correct image*/
     function getMousePosition(event) {
 
-
-
         /* Setting the mouse position variables */
         mouseX = event.pageX;
         mouseY = event.pageY;
@@ -127,16 +125,30 @@ function activeHeadsMoving() {
 
     }
 
-    $(".role").on('click', function (event) {
-        $(event.currentTarget.parentElement.parentElement.children[1]).slideToggle();
-        var text = $(this).text();
-        $(this).text(text == "+" ? "x" : "+");
+    $(".role").on('click', function () {
+        $(this).toggleClass("antirole");
+        $(".role").not(this).removeClass("antirole");
+
+        $(this.parentElement.parentElement.children[1]).slideToggle("fast");
+        $(".info2").not(this.parentElement.parentElement.children[1]).slideUp();
+
+        // var text = $(this).text();
+        // $(this).text(text == "+" ? "x" : "+");
+
+        // var othersText = $(".role").not(this).text();
+        // $(".role").not(this).text(othersText == "+" ? "x" : "+");        
+
     });
 
-    $(".image-holder").on('mouseleave', function (event) {
-        $(event.currentTarget.children[1]).slideUp();
-        $(event.currentTarget.children[0].children[1]).text("+");
-    });
 
-    
+    // $('.info2').click(function () {
+    //     $('.info2').toggleClass('doorOpen');
+    // });
+
+    // $(".image-holder").on('mouseleave', function (event) {
+    //     $(event.currentTarget.children[1]).slideUp();
+    //     $(event.currentTarget.children[0].children[1]).text("+");
+    // });
+
+
 }

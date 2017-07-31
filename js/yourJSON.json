@@ -1,7 +1,8 @@
 [{
         "name": "Alex",
+        "longName": "Álex Lópex",
         "job": "COO",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -16,8 +17,9 @@
     },
     {
         "name": "Gerard",
+        "longName": "Gerard Castillo",
         "job": "Events",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -32,8 +34,9 @@
     },
     {
         "name": "Ruben",
+        "longName": "Rubén Guerrero",
         "job": "Data Mentor",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -48,8 +51,9 @@
     },
     {
         "name": "Mark",
+        "longName": "Mark Thakwell",
         "job": "Director",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -64,8 +68,9 @@
     },
     {
         "name": "Sebastian",
+        "longName": "Sebastián Barajas",
         "job": "CEO",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -80,8 +85,9 @@
     },
     {
         "name": "Nadia",
+        "longName": "Nadia García",
         "job": "Sells",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -96,8 +102,9 @@
     },
     {
         "name": "Vio",
+        "longName": "Violeta Thiomirova",
         "job": "Job Placement",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -112,8 +119,9 @@
     },
     {
         "name": "Ignasi",
+        "longName": "Ignasi López",
         "job": "Java Mentor",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -128,8 +136,9 @@
     },
     {
         "name": "Victor",
+        "longName": "Victor Gili",
         "job": "Sells",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -144,8 +153,9 @@
     },
     {
         "name": "Dani",
+        "longName": "Daniel Castejón",
         "job": "Data Mentor",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -160,8 +170,9 @@
     },
     {
         "name": "Lluis",
+        "longName": "Lluis Online",
         "job": "Data Mentor",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
@@ -176,8 +187,9 @@
     },
     {
         "name": "Raul",
+        "longName": "Raül Martínez",
         "job": "Java Mentor",
-        "info": "Her some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
+        "info": "Here some descrption of everyone. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor",
         "images": {
             "front": "front.png",
             "upleft": "upleft.png",
